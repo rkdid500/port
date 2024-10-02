@@ -4,71 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SPC</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-    *{margin: 0;padding: 0;}
-    body{font-family: 'Rubik', 'Pretendard', sans-serif; margin: 0 auto;}
-    ul{list-style: none;}
-    a{text-decoration: none;}
-    img{border-radius: 30px;object-fit: cover;}
-    span{display: inline-block;}
-
-    header{width: 100%; height: 105px; background-color: #fff; position: fixed; padding: 0 54px; box-sizing: border-box;}
-    .head{display: flex; justify-content: space-between; align-items: center; line-height: 105px; z-index: 999;}
-    .head .menu ul{display: flex;}
-    .head .menu ul li{padding: 0 30px; font-size: 24px; font-weight: 600;}
-    .head .head_right ul{display: flex; justify-content: space-between; align-items: center;}
-    .head .head_right ul li{padding: 0 15px;}
-    .head .head_right ul li a{font-size: 16px; font-weight: 600; background-color: #eaeaea; border-radius: 50px; padding: 5px 10px; color: #000;}
-    .head .head_right ul li img{vertical-align: middle;}
-    
-    main{width: 1749px; padding: 0 54px 50px; box-sizing: border-box;}
-    .slide{width: 100%;}
-    .slide img{width: 100%; object-fit: cover;}
-    .con1{width: 100%; margin: 20px auto; display: grid;grid-template-columns: 1fr 2fr 1fr; gap: 30px; justify-content: center; align-items: center;}
-    .con1 .grid_item{position: relative;}
-    .con1 .grid_item img{width: 100%; height: 441px;}
-    .con1 .grid_item p.txt{position: absolute; color: #fff; font-size: 34px; font-weight: bold;}
-
-    .con2{width: 100%;height: 865px;display: grid; grid-template-columns: 1fr 1fr; gap: 30px;}
-    .con3{width: 100%;height: 865px;display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 20px;}
-    .con2 .left,.con3 .right{width: 865px;}
-    .con2 .left img,.con3 .right img{width: 100%;height: 100%;}
-    .con2 .right,.con3 .left{width: 865px;}
-    .con2 .right ul,.con3 .left ul{width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap;}
-    .con2 .right ul li,.con3 .left ul li{width: 422px; height: 422px;}
-    .con2 .right ul li .text,.con3 .left ul li .text{text-align: center;}
-    .con2 .right ul li .text p:nth-child(1),.con3 .left ul li .text p:nth-child(1){font-size: 48px; font-weight: bold; margin-bottom: 5px;}
-    .con2 .right ul li .text p:nth-child(2),.con3 .left ul li .text p:nth-child(2){font-size: 20px; color:#aaa;}
-    .con2 .right ul li .text p:nth-child(3),.con3 .left ul li .text p:nth-child(3){width: 130px; height: 45px; line-height: 45px; background-color: #f5f5f5;border-radius: 50px;}
-    .con2 .right ul li img,.con3 .left ul li img{width: 100%; height: 100%;}
-
-    .con4{width:1749px;height: 430px; margin-top: 20px;}
-    .con4 ul{display: flex; gap: 30px; justify-content: space-between; align-items: center;}
-    .con4 ul li{position: relative;}
-    .con4 ul li img{width: 100%;height: 100%; object-fit: cover;}
-    .con4 ul li p{position: absolute; left: 30px;top: 30px; color: #fff; font-size: 34px; font-weight: bold;}
-
-    footer{background-color: #f5f5f5; width: 100%;height: 490px;}
-    .fot{width: 1749px;padding: 60px 54px; box-sizing: border-box;}
-    .fot .top{width: 100%; height: 225px; display: flex;justify-content: space-between; align-items: center;}
-    .fot .top .left .first{color: rgba(0,0,0,0.5); margin-bottom: 10px;}
-    .fot .top .left p,.fot .top .left span{font-weight: bold; padding: 0 10px;}
-    /* .fot .top .left span{position: relative;font-weight: bold; padding: 0 10px;} */
-    /* .fot .top .left span::after{content: ""; width: 1px; height: 10px; background-color: #a0a0a0; left: 0px; top: 50%; transform: translateY(-50%); display: block; position: absolute;} */
-    .fot .top .left img{border-radius: 0; margin-bottom: 50px;}
-    .fot .top .right>ul{display: flex; gap: 50px;}
-    .fot .top .right>ul>li p{font-size: 20px; margin-bottom: 24px; font-weight: bold;}
-    .fot .top .right .inner>li{font-size: 18px; color: rgba(0,0,0,0.5); margin-bottom: 10px;}
-
-
-
-    .fot .bot{margin-top: 65px; display: flex; justify-content: space-between;}
-    .fot .bot .left span{font-size: 18px; font-weight: bold; margin-bottom: 20px;}
-    .fot .bot .left p{font-size: 16px; color: rgba(0,0,0,0.5);}
-    .fot .bot .right img{width: 68px;height: 68px; padding: 0 20px;}
-  </style>
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
   <header>
@@ -95,11 +33,23 @@
     </div>
   </header>
   <main>
-    <div class="slide">
-      <p><img src="./images/SPC01.png" alt=""></p>
-      <p><img src="./images/SPC02.png" alt=""></p>
-      <p><img src="./images/SPC03.png" alt=""></p>
-      <p><img src="./images/SPC04.png" alt=""></p>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/SPC01.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/SPC02.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/SPC03.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/SPC04.png" alt="">
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
     <div class="con1">
           <div class="grid_item">
@@ -107,7 +57,7 @@
             <p class="txt">헤리티지</p>
           </div>
           <div class="grid_item">
-            <img src="./images/bread.jpg" alt="">
+            <img src="./images/spcway.png" alt="">
             <p class="txt">SPC WAY</p>
           </div>
           <div class="grid_item">
@@ -117,7 +67,12 @@
         </div>
         <div class="con2">
           <div class="left">
-            <p><img src="./images/ice cream.png" alt=""></p>
+            <img src="./images/ice cream.png" alt="">
+            <div class="txt">
+              <p>먹고</p>
+              <p>마시고</p>
+              <p>즐기자</p>
+            </div>
           </div>
           <div class="right">
             <ul>
@@ -125,12 +80,28 @@
                 <div class="text">
                   <p>BRAND</p>
                   <p>SPC그룹의 다양한 브랜드를 만나보세요.</p>
-                  <p> < 01/06 > </p>
+                  <span> < 01/06 > </span>
                 </div>
               </li>
-              <li><img src="./images/steamed bun.png" alt=""></li>
-              <li><img src="./images/bread.jpg" alt=""></li>
-              <li><img src="./images/baskinrobbins.jpg" alt=""></li>
+              <li>
+                <img src="./images/steamed bun.png" alt="">
+                <div class="txt">
+                  <p>삼립</p>
+                </div>
+              </li>
+              <li>
+                <img src="./images/bread.jpg" alt="">
+                <div class="txt">
+                  <p>파리바게뜨
+                  </p>
+                </div>
+              </li>
+              <li>
+                <img src="./images/baskinrobbins.jpg" alt="">
+                <div class="txt">
+                  <p>배스킨라빈스</p>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -142,7 +113,7 @@
                 <div class="text">
                   <p>SPC NOW</p>
                   <p>SPC그룹의 다양한 브랜드를 만나보세요.</p>
-                  <p> < 01/03 > </p>
+                  <span> < 01/03 > </span>
                 </div>
               </li>
               <li><img src="./images/배라 썸네일.jpg.jpg" alt=""></li>
@@ -151,6 +122,11 @@
           </div>
           <div class="right">
             <img src="./images/빵 배경이미지.png" alt="">
+            <div class="txt">
+              <p>NEWS</p>
+              <p>MAGAZINE</p>
+              <p>SNS</p>
+            </div>
           </div>
         </div>
         <div class="con4">
@@ -249,5 +225,26 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+  // spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    autoplay:true,
+    loop:true,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+</script>
 </body>
 </html>
