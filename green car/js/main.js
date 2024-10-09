@@ -63,7 +63,7 @@ gsap.to(".slide-img", {
     scrub: true,
     trigger: ".section03",
     pin: true,
-    markers: true,
+    // markers: true,
     start: "top 80px",
     end: "+=5000",
   },

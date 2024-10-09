@@ -38,7 +38,7 @@ a{text-decoration: none;}
     no-repeat left 85px;
   min-height: 100vh;
   position: relative;
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 .main #page .section02 .slide-area {
   display: flex;
