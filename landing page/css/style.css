@@ -10,9 +10,9 @@ span{display: inline-block;}
 
 .section01{width: 100%; min-height: 100vh;}
 .section01 .section_inner{height: 100vh; display: flex;flex-direction: column;justify-content: center;align-items: center;}
-.section01 .section_inner .text{text-align: center; font-size: 50px; color: #fff;}
+.section01 .section_inner .text{text-align: center; font-size: 100px; color: #fff;}
 .section01 .section_inner .text p{margin-bottom: 20px;}
-.section01 .section_inner .text p:last-child{font-size: 20px;}
+.section01 .section_inner .text p:last-child{font-size: 50px;}
 
 
 
