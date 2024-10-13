@@ -99,6 +99,7 @@
   document.querySelectorAll(".split").forEach(text => {
     let theText = text.innerText;
     let newText = "";
+    let line = ".bar";
 
     for(let i=0; i<text.innerText.length; i++){
         newText += "<span aria-hidden='true'>";
@@ -124,24 +125,8 @@
         }
       });
 
-//       gsap.utils.toArray(".bar").forEach((item) => {
-//     ScrollTrigger.create({
-//         trigger: item,
-//         start: "top 80%",
-//         end: "bottom 20%",
-//         markers: true,
-//         onEnter: () => {animated(item)}, 
-//     });
 
-//     itemed.style.opacity = "0";
-// });
 
-// const animated = (item) => {
-//     gsap.fromTo(itemed, 
-//         {autoAlpha: 0, x: 0, y: 0}, 
-//         {autoAlpha: 1, x: 0, y: 0, duration: 0.5, overwrite: "auto", ease: "expo"}
-//     );
-// }    
 
       gsap.utils.toArray(".section_content").forEach((item) => {
     ScrollTrigger.create({
