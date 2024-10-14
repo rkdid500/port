@@ -17,12 +17,10 @@
         </div>
       </div>
     </section>
-
-    <!-- 클론 페이지 소개 -->
-
     <section class="section02">
+      <!-- 클론 페이지 소개 -->
       <div class="line">
-        <span class="bar"></span>
+        <span></span>
       </div>
       <div class="section_content">
         <div class="link">
@@ -63,44 +61,22 @@
         </div>
       </div> -->
     </section>
-
-    <!-- 자기소개 -->
-
     <section class="section03">
-      <div class="skill">
-          <p class="desc">My Skill</p>
-        <ul class="board">
-          <li class="board_con">
-            <img src="./images/folder_1.png" alt="">
-            <p>HTML</p>
-          </li>
-          <li class="board_con">
-            <img src="./images/folder_2.png" alt="">
-            <p>CSS</p>
-          </li>
-          <li class="board_con">
-            <img src="./images/folder_3.png" alt="">
-            <p>JavaScript</p>
-          </li>
-          <li class="board_con">
-            <img src="./images/ps_image.png" alt="">
-            <p>PhotoShop</p>
-          </li>
-          <li class="board_con">
-            <img src="./images/ai_image.png" alt="">
-            <p>Illustrator</p>
-          </li>
-          <li class="board_con">
-            <img src="./images/figma.png" alt="">
-            <p>Figma</p>
-          </li>
-        </ul>
+      <!-- 디자인 소개 -->
+      <div class="design">
+        <div class="con">
+          <img src="" alt="">
+        </div>
+        <div class="con">
+          <img src="" alt="">
+        </div>
+        <div class="con">
+          <img src="" alt="">
+        </div>
       </div>
     </section>
-
-    <!-- ㄷㅈㅇ소개 -->
-     
-    <!-- <section class="section04">
+    <section class="section04">
+      <!-- 자기소개 -->
       <div class="who">
         <div class="cont">
         </div>
@@ -110,14 +86,12 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
   <script src="https://unpkg.com/split-type"></script>
 
   <script>
   document.querySelectorAll(".split").forEach(text => {
     let theText = text.innerText;
     let newText = "";
-    let line = ".bar";
 
     for(let i=0; i<text.innerText.length; i++){
         newText += "<span aria-hidden='true'>";
@@ -135,109 +109,12 @@
         y:100,
         autoAlpha:0,
         duration:3,
-        scrub:true,
         ease: "circ.out",
         stagger:{
           amount:1,
           from:"random"
         }
       });
-
-
-      gsap.utils.toArray(".section_content").forEach((item) => {
-    ScrollTrigger.create({
-        trigger: item,
-        start: "top 30%",
-        end: "bottom 70%",
-        // markers: true,
-        scrub:true,
-        onEnter: () => {animate(item)}, 
-    });
-
-    item.style.opacity = "0";
-});
-
-      const animate = (item) => {
-          gsap.fromTo(item, 
-              {autoAlpha: 0, x: 0, y: 0 ,scale:0}, 
-              {autoAlpha: 1, x: 0, y: 100, duration: 2, overwrite: "auto", ease: "expo",scale:0.8}
-          )
-      };
-
-    //   gsap.utils.toArray(".section03 .skill").forEach((my) => {
-    // ScrollTrigger.create({
-    //     trigger: my,
-    //     start: "top 20%",
-    //     end: "bottom 80%",
-    //     // markers: true,
-    //     scrub:true,
-
-    //     onEnter: () => {animate(my)}, 
-    // });
-    // const animate = (my) => {
-    //       gsap.fromTo(my, 
-    //           {autoAlpha: 0.5, x: 0, y: 0 ,scale:1.5}, 
-    //           {autoAlpha: 1, x: 0, y: 0, scale:1, duration: 2, overwrite: "auto", ease: "expo",}
-    //       )
-    //   };
-
-      // gsap.fromTo(".section03 .skill",{
-      //   scale:1.5,opacity:0.5,
-      // },{
-      //   scale:1,opacity:1
-      // });
-
-      const ani1 = gsap.timeline();
-    ani1.to(".section3 .skill",{
-      scale:1.5,
-      borderRadius:0,
-    }).to(".section3 .skill",{
-      scale:1,
-      borderRadius:20,
-    });
-          ScrollTrigger.create({
-        animate:ani1,
-        trigger:".section03",
-        start:"top 30%",
-        end:"bottom 70%",
-        // pin:true,
-        scrub:true,
-        duration: 5,
-        id:"box1",
-        anticipatePin:1,
-      });
-
-
-      // const ani1 = gsap.timeline();
-      // ani1.fromTo(".section03 .skill",{
-      //   scale:1.5,autoAlpha:0,
-      // },{scale:1,autoAlpha:1})
-
-      // ScrollTrigger.create({
-      //   animate:ani1,
-      //   trigger:".section03",
-      //   start:"top 30%",
-      //   end:"bottom 70%",
-      //   pin:true,
-      //   scrub:true,
-      //   duration: 5,
-      //   id:"box1",
-      //   anticipatePin:1,
-      // });
-
-const lenis = new Lenis();
-
-lenis.on('scroll', (e) => {
-    console.log(e);
-})
-
-function raf(time) {
-    lenis.raf(time)
-    requestAnimationFrame(raf);
-}
-requestAnimationFrame(raf);
-
-
   </script>
 </body>
 </html>
