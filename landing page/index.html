@@ -49,7 +49,7 @@
           <a href="#"><img src="./images/Slice 2.png" alt=""></a>
         </div>
       </div>
-      <div class="section_content">
+      <!-- <div class="section_content">
         <div class="link">
           <a href="#"><img src="./images/Slice 3.png" alt=""></a>
         </div>
@@ -61,37 +61,80 @@
           <span>CSS</span>
           <span>JQUERY</span>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <!-- 자기 소개 -->
 
     <section class="section03">
       <div class="skill">
+        <p class="desc">My Skill</p>
         <ul>
           <li>
             <a href="#"><img src="./images/folder_1.png" alt=""></a>
-            <p>HTML</p>
+            <span>HTML</p>
           </li>
           <li>
             <a href="#"><img src="./images/folder_2.png" alt=""></a>
-            <p>CSS</p>
+            <span>CSS</p>
           </li>
           <li>
             <a href="#"><img src="./images/folder_3.png" alt=""></a>
-            <p>JavaScript</p>
+            <span>JavaScript</p>
           </li>
           <li>
             <a href="#"><img src="./images/ps_image.png" alt=""></a>
-            <p>PhotoShop</p>
+            <span>PhotoShop</p>
           </li>
           <li>
             <a href="#"><img src="./images/ai_image.png" alt=""></a>
-            <p>Illustrator</p>
+            <span>Illustrator</p>
           </li>
           <li>
             <a href="#"><img src="./images/figma.png" alt=""></a>
-           <p>Figma</p>
+           <span>Figma</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- 인적사항 -->
+    <section class="section04">
+      <div class="left">
+        <p><img src="./images/ps_image.png" alt="내얼굴"></p>
+      </div>
+      <div class="right">
+        <ul class="list">
+          <li>
+            <p>생년월일</p>
+            <ul>
+              <li>
+                <p>2001-08-21</p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>거주지</p>
+            <ul>
+              <li>
+                <p>대전광역시 동구 가양동</p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>자격증</p>
+            <ul>
+              <li>
+                <p>운전면허 2종 보통</p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>이력서</p>
+            <ul>
+              <li>
+                <p>링크</p>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -143,7 +186,6 @@
         trigger: item,
         start: "top 30%",
         end: "bottom 70%",
-        markers: true,
         scrub:true,
         onEnter: () => {animate(item)}, 
     });
