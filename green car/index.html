@@ -6,13 +6,31 @@
     <title>그린카</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      $(function(){
+        let bool = true;
+        $("#wrap .inner .btn").click(function(){
+          if(bool){
+            $(".nav").css("display","block");
+          }
+          else{
+            $(".nav").css("display","none");
+          }
+          bool = !bool;
+        });
+      });
+    </script>
+
   </head>
   <body>
     <div id="wrap">
       <header>
         <div class="logo">
           <div class="inner">
-            <p><img src="./images/로고화이트.png" alt=""></p>
+            <a href="#"><img src="./images/로고화이트.png" alt=""></a>
+            <a href="#" class="btn"><img src="./images/menu.png" alt=""></a>
           </div>
         </div>
         <div class="bg">
@@ -21,64 +39,66 @@
           </video>
         </div>
         <!-- 여기에 클릭이벤트로 메뉴 나오는 서식 만들기 -->
-        <div class="gnb">
-          <div class="left">
-            <div class="text">
-              <p><img src="images/text.png" alt=""></p>
-              <p><img src="images/text02.png" alt=""></p>
+        <div class="nav">
+          <div class="gnb">
+            <div class="left">
+              <div class="text">
+                <p><img src="images/text.png" alt=""></p>
+                <p><img src="images/text02.png" alt=""></p>
+              </div>
+              <div class="link">
+                <a href="#">회사소개</a>
+                <a href="#">인재채용</a>
+              </div>
+              <div class="sns">
+                <p>공식SNS채널</p>
+                <img src="images/icon_Instagram.146b98a0bec363bf5c60.svg" alt="">
+                <img src="images/icon_naverblog.71e722224ff49b8e3592.svg" alt="">
+                <img src="images/icon_youtube.eb61e3e240492bd2ea6b.svg" alt="">
+                <img src="images/icon_facebook.c0715cdee36485a3ac99.svg" alt="">
+              </div>
             </div>
-            <div class="link">
-              <a href="#">회사소개</a>
-              <a href="#">인재채용</a>
+            <div class="right">
+                <div class="list">
+                  <a href="#">G car</a>
+                  <ul>
+                    <li>G car</li>
+                    <li>이용안내</li>
+                    <li>요금안내</li>
+              </ul>
             </div>
-            <div class="sns">
-              <p>공식SNS채널</p>
-              <img src="images/icon_Instagram.146b98a0bec363bf5c60.svg" alt="">
-              <img src="images/icon_naverblog.71e722224ff49b8e3592.svg" alt="">
-              <img src="images/icon_youtube.eb61e3e240492bd2ea6b.svg" alt="">
-              <img src="images/icon_facebook.c0715cdee36485a3ac99.svg" alt="">
-            </div>
-          </div>
-          <div class="right">
               <div class="list">
-                <a href="#">G car</a>
-                <ul>
-                  <li>G car</li>
-                  <li>이용안내</li>
-                  <li>요금안내</li>
-            </ul>
-          </div>
-            <div class="list">
-              <a href="#">서비스</a>
-                <ul>
-                  <li>G car 패스</li>
-                  <li>G ca r편도</li>
-                  <li>G car Biz</li>
-                  <li>세차클링</li>
-                </ul>
-              </div>
-                <div class="list">
-                  <a href="#">혜택</a>
-                <ul>
-                  <li>이벤트</li>
-                  <li>쿠폰</li>
-                </ul>
-              </div>
-                <div class="list">
-                  <a href="#">파트너십</a>
-                <ul>
-                  <li>제휴 문의</li>
-                  <li>G car Zone 신청</li>
-                  <li>공공 지원</li>
-                </ul>
-              </div>
-                <div class="list">
-                  <a href="#">고객센터</a>
-                <ul>
-                  <li>자주묻는 질문</li>
-                  <li>공지사항</li>
-                </ul>
-              </div>
+                <a href="#">서비스</a>
+                  <ul>
+                    <li>G car 패스</li>
+                    <li>G ca r편도</li>
+                    <li>G car Biz</li>
+                    <li>세차클링</li>
+                  </ul>
+                </div>
+                  <div class="list">
+                    <a href="#">혜택</a>
+                  <ul>
+                    <li>이벤트</li>
+                    <li>쿠폰</li>
+                  </ul>
+                </div>
+                  <div class="list">
+                    <a href="#">파트너십</a>
+                  <ul>
+                    <li>제휴 문의</li>
+                    <li>G car Zone 신청</li>
+                    <li>공공 지원</li>
+                  </ul>
+                </div>
+                  <div class="list">
+                    <a href="#">고객센터</a>
+                  <ul>
+                    <li>자주묻는 질문</li>
+                    <li>공지사항</li>
+                  </ul>
+                </div>
+            </div>
           </div>
         </div>
       </header>
