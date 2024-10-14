@@ -63,6 +63,21 @@
         </div>
       </div> -->
     </section>
+<!-- 
+    <section class="section21">
+      <div class="section21_con">
+        <div class="left">
+          <div class="text">
+            <p>롯데렌터카 G car</p>
+            <p></p>
+            <p></p>
+          </div>
+        </div>
+        <div class="right">
+
+        </div>
+      </div>
+    </section> -->
 
     <!-- 자기 소개 -->
 
@@ -72,27 +87,51 @@
         <ul>
           <li>
             <a href="#"><img src="./images/folder_1.png" alt=""></a>
-            <span>HTML</p>
+            <p>HTML</p>
+            <span class="line line-top"></span>
+            <span class="line line-right"></span>
+            <span class="line line-bottom"></span>
+            <span class="line line-left"></span>
           </li>
           <li>
             <a href="#"><img src="./images/folder_2.png" alt=""></a>
-            <span>CSS</p>
+            <p>CSS</p>
+            <span class="line line-top"></span>
+            <span class="line line-right"></span>
+            <span class="line line-bottom"></span>
+            <span class="line line-left"></span>
           </li>
           <li>
             <a href="#"><img src="./images/folder_3.png" alt=""></a>
-            <span>JavaScript</p>
+            <p>JavaScript</p>
+            <span class="line line-top"></span>
+            <span class="line line-right"></span>
+            <span class="line line-bottom"></span>
+            <span class="line line-left"></span>
           </li>
           <li>
             <a href="#"><img src="./images/ps_image.png" alt=""></a>
-            <span>PhotoShop</p>
+            <p>PhotoShop</p>
+            <span class="line line-top"></span>
+            <span class="line line-right"></span>
+            <span class="line line-bottom"></span>
+            <span class="line line-left"></span>
           </li>
           <li>
             <a href="#"><img src="./images/ai_image.png" alt=""></a>
-            <span>Illustrator</p>
+            <p>Illustrator</p>
+            <span class="line line-top"></span>
+            <span class="line line-right"></span>
+            <span class="line line-bottom"></span>
+            <span class="line line-left"></span>
           </li>
           <li>
             <a href="#"><img src="./images/figma.png" alt=""></a>
-           <span>Figma</p>
+           <p>Figma</p>
+           <span class="line line-top"></span>
+           <span class="line line-right"></span>
+           <span class="line line-bottom"></span>
+           <span class="line line-left"></span>
           </li>
         </ul>
       </div>
@@ -178,7 +217,23 @@
         }
       });
 
-
+    const ani2 = gsap.timeline({
+      defaults:{autoAlpha:0,}
+    });
+    ani2.from(".section03 ul li",{
+      y:-200,
+    })
+    ScrollTrigger.create({
+      animation:ani2,
+      trigger:".section03",
+      //markers:true, 
+      start:"top top", 
+      // end:"+=2000",
+      pin:true,
+      scrub:true,
+      id:"box1",
+      anticipatePin:1,
+    });
 
 
       gsap.utils.toArray(".section_content").forEach((item) => {
